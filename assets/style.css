@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  list-style-position: inside;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-family: sans-serif;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.p__btn {
+  background-color: #55e6a5;
+  padding: 18px 36px;
+  font-size: 18px;
+  font-family: poppins;
+  color: black;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s linear 0s;
+}
+.p__btn:hover {
+  background-color: #141c27;
+  color: white;
+}
+.s__btn {
+  background-color: transparent;
+  padding: 18px 36px;
+  font-size: 18px;
+  font-family: poppins;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.s__btn i {
+  color: #55e6a5;
+  font-size: 60px;
+}
+
+/*************************** Header Style Here ************************** */
+header {
+  background-color: #141c27;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+  z-index: 99;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+.nav__start {
+  height: 100px;
+}
+.nav__start a img {
+  height: 100%;
+}
+.nav__center {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: poppins;
+  text-transform: uppercase;
+  padding: 0;
+}
+.nav__center li a {
+  color: white;
+  font-size: 18px;
+  transition: 0.3s all;
+}
+.nav__center li a:hover {
+  color: #55e6a5;
+}
+.active {
+  color: #55e6a5 !important;
+}
+.nav__end button {
+  height: 100px;
+  padding: 35px;
+  background-color: #55e6a5;
+  color: black;
+  font-size: 35px;
+}
+/*************************** Header Style End ************************** */
+
+/*************************** Banner Style Start ************************** */
+.banner__container {
+  background-color: #010103;
+  padding: 200px 0 100px 0;
+  position: relative;
+  z-index: -0;
+}
+.banner__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  color: white;
+}
+.banner__left h1 {
+  font-size: 50px;
+}
+.banner__left h1 span {
+  color: #55e6a5;
+}
+.banner__left p {
+  font-family: poppins;
+  font-size: 20px;
+  color: #a2a2a2;
+  margin: 35px 0;
+}
+.banner__btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.banner__right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner__right img {
+  position: absolute;
+}
+.banner__right img:nth-child(1) {
+  width: 76%;
+}
+.banner__right img:nth-child(2) {
+  width: 90%;
+  animation: topBottom 1s alternate-reverse infinite;
+}
+
+@keyframes topBottom {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
+
+/*************************** Banner Style End ************************** */
